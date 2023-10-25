@@ -1,14 +1,15 @@
 import Carousal from "./comp/Carousal";
-import Aboutus from "./comp/Aboutus";
+import Aboutus from "./comp/Beforeftr";
 import Bestseller from "./comp/Bestseller"
 import Popular from "./comp/Popular";
 import FandQ from "./comp/FandQ";
+import Header from "./Header";
 
 function Divider() {
   return (
     <>
       <section className=" section-bubble1 mt-0">
-
+        <Header/>
         <Carousal />
       </section>
       <section className="py-0 section-bubble2">

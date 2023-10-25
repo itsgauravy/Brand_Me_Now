@@ -1,11 +1,11 @@
 function Popular() {
     return (
         <section className="popular">
-            <div className="container mx-2 my-3">
+            <div className="container mx-auto ">
                 <h3>CATEGORIES</h3>
 
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-3 my-1">
                         <div class="card">
                             <img src="aprons.png" alt="" className="img" />
                             <div class="textBox">
@@ -13,7 +13,7 @@ function Popular() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 my-1">
                         <div class="card">
                             <img src="headwears.png" alt="" className="img" />
                             <div class="textBox">
@@ -21,7 +21,7 @@ function Popular() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 my-1">
                         <div class="card">
                             <img src="hi-vis.png" alt="" className="img" />
                             <div class="textBox">
@@ -29,7 +29,7 @@ function Popular() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 my-1">
                         <div class="card">
                             <img src="hoodies.png" alt="" className="img" />
                             <div class="textBox">
