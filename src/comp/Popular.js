@@ -2,7 +2,7 @@ function Popular() {
     return (
         <section className="popular">
             <div className="container mx-auto ">
-                <h3>CATEGORIES</h3>
+                <h2>CATEGORIES</h2>
 
                 <div className="row">
                     <div className="col-md-3 my-1">

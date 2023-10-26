@@ -1,12 +1,16 @@
 
-* {
+*body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	
+	width: 100%;
+	overflow-y: hidden;
   }
 
  
+.announcement-item{
+	padding: 0;
+}
 
 .announcement_bar {
 	text-align: center;
@@ -17,10 +21,12 @@
   
   .announcement_bar p {
 	font-family: Arial, sans-serif;
+	width: 100%;
 	margin: 0;
 	font-size: 14px;
 	color: #ffffff;
 	font-weight:200;
+	padding: 0;
   }
 
   .announcement_bar a{
@@ -119,7 +125,7 @@
 
   .navbar-toggle {
 	display: none;
-	order:-1;
+	
 	flex-direction: column;
 	cursor: pointer;
 	color: #020303;
@@ -133,10 +139,13 @@
 	
   }
   
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width:860px) {
 	.navbar-toggle {
 	  display: flex;
+	  order:-1;
 	  margin-left: auto;
+	  color:#020303
+	  
 	}
 	.link-list {
 	  display: none;
@@ -147,6 +156,14 @@
 	}
 	.link-list.active {
 	  display: flex;
+	}
+
+	.navbar{
+		margin-right:5px;
+		margin-left: auto;
+		padding: 0;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
   }
   
@@ -170,11 +187,12 @@ header {
 	filter: brightness(90%);
 }
 header .overlay{
-	width: 100%;
-	height: 100%;
+	width: 40%;
+	height: 50%;
 	margin-top: 70px;
-	margin-left: 250px;
-	padding: 50px;
+	margin-left: auto;
+	margin-right: 100px;
+	
 	color: #FFF;
 	text-shadow: 1px 1px 1px #333;	
 }
@@ -272,7 +290,7 @@ h3, p {
 	text-align: center;
 	height: 50px;
 	background:linear-gradient(to right,#585d5c,#dcdfe2);
-	
+	padding-right: 12px;
   }
 
   .footer3{
@@ -299,14 +317,10 @@ h3, p {
   }
   
   .product {
-	margin: 10px;
 	max-width: 300px;
   }
   
-  .product img {
-	max-width: 100%;
-	height: auto;
-  }
+  
   
   .product h3 {
 	margin-top: 10px;
@@ -314,8 +328,8 @@ h3, p {
   }
 
   .card {
-	width: 90%px;
-	height: 250px;
+	width: 100%;
+	height: 265px;
 	background: #31313136;
 	border-radius: 20px;;
 	display: flex;
@@ -509,7 +523,19 @@ h3, p {
 
    .carousal{
 	text-align: center;
-	
+   }
+
+   .carousal h2{
+	font-size:xx-large
+   }
+   .container-fluid{
+		padding: 0;
+		
+   }
+
+   .popular h2{
+	font-size:xx-large;
+	font-weight: 700;
    }
 
 
@@ -601,6 +627,12 @@ h3, p {
   .fandq p,i{
 	color:	rgba(0, 0, 0, 0.993);
   }
+  .fandq a{
+	text-decoration: none;
+  }
+  .fandq{
+	text-align: center;
+  }
 
   #ftr2{
 	background: transparent;
@@ -627,22 +659,24 @@ h3, p {
   }
   .carousel-container {
 	max-width: 600px;
-	margin: 0 ;
 	overflow: hidden;
   }
   
   .carousel {
 	display: flex;
 	transition: transform 0.5s;
+	
   }
   
   .carousel-item {
 	flex: 0 0 ; 
 	padding: 0px;
+	
   }
   
   .carousel-item img {
-	max-width: 100%;
+	width: 100%;
+
   }
   
   .carousel-item:nth-child(odd) {
@@ -654,15 +688,15 @@ h3, p {
 	--color2: rgb(10, 25, 30);
 	padding: 0.8em 1.75em;
 	background-color: transparent;
-	border-radius: 6px;
+	border-radius: 10px;
 	border: .3px solid var(--color);
 	transition: .5s;
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
 	z-index: 1;
-	font-weight: 300;
-	font-size: 17px;
+	font-weight: 100;
+	font-size: 15px;
 	font-family:'Times New Roman', Times, serif;
 	text-transform: uppercase;
 	color: var(--color);
@@ -714,8 +748,8 @@ h3, p {
 
    .product img{
 	border-radius: 10px;
-	height:100%;
-	width:100%;
+	height:45vh;
+	width:50vh;
    }
    
 
@@ -754,7 +788,7 @@ h3, p {
 	background-color: #ffffff;
   }
   .section-bubble3:after {
-	background-color: #cccccc;
+	background-color: #d0d0d0;
 	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>"
   )
   }
@@ -801,8 +835,8 @@ h3, p {
 
 
 
-*h3{
-	font-weight: 900;
+*h2{
+	
 	font-size: xx-large;
 	
 }

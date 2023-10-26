@@ -46,10 +46,7 @@
   
 }
 
-body{
-    height: 100vh; 
-    margin: 0; 
-}
+
 
 @media screen and (max-width:1000px){
     header .overlay{
@@ -66,3 +63,18 @@ body{
 }
 
 
+#crow{
+    width: 100%;
+}
+#frow{
+    width: 100%;
+}
+
+.noti{
+   padding: 0;
+}
+
+
+.product img{
+    box-shadow: 5px 5px 5px rgba(49, 49, 49, 0.949);    
+}

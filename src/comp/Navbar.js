@@ -12,7 +12,7 @@ function Navbar() {
     return ( 
         
         <>
-        <div className="row">
+        <div className="">
                     <Notification/>
                 </div>
          <nav class="navbar">
@@ -22,7 +22,7 @@ function Navbar() {
                         </div>
                         <div className="navbar mx-auto ">
                             <div className="navbar-toggle " onClick={toggleNav}>
-                                <div className="bar"><i class="bi bi-three-dots-horizontal"></i></div>
+                                <div className="bar my-auto"><i class="bi bi-list"></i></div>
                                 
                             </div>
                             <ul className={`link-list  ${isActive ? 'active' : ''}`}>
