@@ -4,6 +4,7 @@ import Bestseller from "./comp/Bestseller"
 import Popular from "./comp/Popular";
 import FandQ from "./comp/FandQ";
 import Header from "./Header";
+import Bundle from "./comp/Bundle";
 
 function Divider() {
   return (
@@ -14,6 +15,7 @@ function Divider() {
       </section>
       <section className="py-0 section-bubble2">
         <>
+          <Bundle/>
           <Bestseller/>
         </>
       </section>

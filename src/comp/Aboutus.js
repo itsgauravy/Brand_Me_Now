@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 function Aboutus() {
     return (
@@ -24,25 +24,7 @@ function Aboutus() {
                     </div>
                 </div>
                 <hr/>
-                <div className="row ">
-                    <div className="col-md-6">
-                        <h3>Contact us</h3>
-                        <ul>
-                            <li> <i class="bi bi-telephone-fill"></i> Call us - +01 23165498</li>
-                            <li> <i class="bi bi-envelope-fill"></i> Email us - Brandmenow123@gmail.com</li>
-                            <li> <i class="bi bi-geo-alt-fill"></i> Headquaters - Lindon House, Birmingham B29 6EN</li>
-                        </ul>
-                    </div>
-                    <div className="col-md-2"></div>
-                    <div className="col-md-4">
-                        <h3>Social Links </h3>
-                        <ul>
-                            <li><Link to="/about"><i className="bi bi-facebook"></i> facebook </Link></li>
-                            <li><Link to="/about"><i className="bi bi-instagram"></i> instagram </Link></li>
-                            <li><Link to="/about"><i className="bi bi-linkedin"></i> linkedin. </Link></li>
-                        </ul>
-                    </div>
-                </div>
+                
             </div>
 
         </section>

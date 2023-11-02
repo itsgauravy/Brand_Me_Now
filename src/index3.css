@@ -1,0 +1,77 @@
+.bundle .carousel-item{
+    background-color: #cccccc;
+    height: 100%;
+    
+}
+
+
+.bundle .card{
+    height:100%;
+    margin-left:20px;
+    background-color: rgba(147, 221, 19, 0.803);
+    color: black;
+    
+}
+
+.bundle img{
+    border-radius: 20px 20px 0 0;
+}
+
+.bundle .card a{
+    color:deeppink;
+    text-decoration: none;
+}
+
+.contact{
+    min-height: 100vh;
+    align-content: center;
+}
+
+.contact iframe{
+    width:100%;
+     height:80vh;
+     }
+
+.contact h6{
+    font-size: larger;
+   
+}
+
+.contact .btn{
+    background-color: deeppink;
+    font-size: large;
+}
+
+.contact input{
+    border-color: chartreuse;
+    border-radius: 3px;
+}
+
+.contact select{
+    border-color: chartreuse;
+    border-radius: 3px;
+}
+
+.contact textarea{
+    border-color: chartreuse;
+    border-radius: 3px;
+}
+
+.contact .form{
+    width: 100%;
+    height: max-content;
+    background-color: rgba(255, 20, 145, 0.775);
+    border:black ;
+    border-radius: 3px;
+   
+}
+
+#contactno{
+    text-align: center;
+}
+
+#cform h3{
+    text-align: center;
+}
+
+
