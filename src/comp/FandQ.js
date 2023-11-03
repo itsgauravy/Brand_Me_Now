@@ -11,7 +11,7 @@ function FandQ() {
             <div className="col-md-12">
 
               <footer className="text-center text-lg-start  text-muted">
-           <div className="container text-center text-md-start  mt-1">
+                <div className="container text-center text-md-start  mt-1">
 
                   <div className="row">
 
@@ -104,14 +104,37 @@ function FandQ() {
                       </p>
                       <p><i className="bi bi-phone me-3"></i> + 01 234 567 88</p>
                       <p><i className="bi bi-printer me-3"></i> + 01 234 567 89</p>
+
+
                     </div>
-
                   </div>
+                  <div className="row mb-3">
+                    <div className="col-md-3"></div>
+                    <div className="col-md-3"></div>
+                    <div className="col-md-3"><h6> Payment type we accept: </h6></div>
+                    <div className="col-md-3">
+                      <section className="d-flex justify-content-center justify-content-lg-between ">
 
+                        <div className="payway ">
+                          <Link to="" className="me-4 text-reset">
+                           <img src="webimg/AmEx.png " alt=""/>
+                          </Link>
+                          <Link to="" className="me-4 text-reset">
+                          <img src="webimg/mastcard.png " alt=""/>
+                          </Link>
+                          <Link to="" className="me-4 text-reset">
+                          <img src="webimg/visa.png " alt=""/>
+                          </Link>
+                          <Link to="" className="me-4 text-reset">
+                          <img src="webimg/wpayt.png " alt=""/>
+                          </Link>
+                          
+                        </div>
+
+                      </section>
+                    </div>
+                  </div>
                 </div>
-
-
-
               </footer>
 
             </div>

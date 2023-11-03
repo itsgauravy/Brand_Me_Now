@@ -551,9 +551,9 @@ h3, p {
    .form {
 	display: flex;
 	flex-direction: column;
-	background: #94ace6d7;
+	background: #86e031d7;
 	
-	background: linear-gradient(to right, #6d768ba0, #7481a0);
+	background-color:  rgba(128, 255, 0, 0.811);
 	padding: 20px;
 	border-radius: 10px;
 	max-width: 350px;
@@ -629,7 +629,7 @@ h3, p {
   }
 
   .fandq h6{
-	color: rgb(123, 123, 123);
+	color: deeppink;
   }
 
   .fandq p,i{
@@ -649,7 +649,7 @@ h3, p {
 
 
   .submit {
-	background-color: #344fa037;
+	background-color: #87e72867;
 	color: #d63838;
 	border: none;
 	padding: 5px ;
@@ -659,7 +659,7 @@ h3, p {
   }
   
   .submit:hover {
-	background-color: #080808; 
+	background-color:deeppink; 
   }
 
   #car{
@@ -692,7 +692,7 @@ h3, p {
   }
   
   .btn2 {
-	--color: #020303;
+	--color: deeppink;
 	--color2: rgb(10, 25, 30);
 	padding: 0.8em 1.75em;
 	background-color: transparent;

@@ -6,8 +6,11 @@ function Aboutus() {
             <hr />
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-4" id="h1c">
                         <h3>About Us</h3>
+                       </div>
+                       <div className="col-md-8" id="h2c">  
+
                         <h6>Leading Personalised Workwear & clothing store</h6>
                         <p>Brand Me Now is a custom workwear and promotional clothing supplier, we provide high quality, custom printed and embroidered clothing to businesses looking to enhance their image through comfortable clothing, or to hand-out some corporate gifts for clients, our personalized printed T-shirts are the absolute best.
 
@@ -24,6 +27,45 @@ function Aboutus() {
                     </div>
                 </div>
                 <hr/>
+                <div className="row">
+                    <div className="col-md-4" id="h1c">
+                        <h3>What we Provide</h3>
+                       </div>
+                       <div className="col-md-6" id="h2c">  
+                            <h5>CUSTOMIZE CLOTHING</h5>
+                            <p>everything about the customize clothing etc </p>
+                        
+                    </div>
+                    <div className="col-md-2 my-3" id="h3c">
+                        <img src="webimg/addlogo1.jpg" alt="" />
+                    </div>
+
+                    <div className="col-md-4" id="h1c">
+                       
+                       </div>
+                       <div className="col-md-6" id="h2c">  
+                            <h5>CUSTOMIZE CLOTHING</h5>
+                            <p>everything about the customize clothing etc </p>
+                        
+                    </div>
+                    <div className="col-md-2 my-3" id="h3c">
+                        <img src="webimg/addlogo1.jpg" alt="" />
+                    </div>
+
+                    <div className="col-md-4" id="h1c">
+                       
+                       </div>
+                       <div className="col-md-6" id="h2c">  
+                            <h5>CUSTOMIZE CLOTHING</h5>
+                            <p>everything about the customize clothing etc </p>
+                        
+                    </div>
+                    <div className="col-md-2 my-3" id="h3c">
+                        <img src="webimg/addlogo1.jpg" alt="" />
+                    </div>
+
+                    <hr/>
+                </div>
                 
             </div>
 

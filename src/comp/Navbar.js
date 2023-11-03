@@ -16,7 +16,7 @@ function Navbar() {
             <nav class="navbar">
                 <div class="container-fluid">
                     <div className="logo">
-                        <img src="bmn logo.png" alt="Logo" className="ms-1" />
+                       <Link to="/"> <img src="bmn logo.png" alt="Logo" className="ms-1" /></Link>
                     </div>
                     
                                     <div>
