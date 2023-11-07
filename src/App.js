@@ -8,12 +8,18 @@ import Aboutus from './comp/Aboutus';
 import Bundle from './comp/Bundle';
 import Contact from './comp/Contact';
 
+import { Contextapi } from './comp/Contextapi';
+
+import Filter from './comp/Filter';
+import Projects2 from './comp/Products2';
+
 
 
 function App() {
   return (
     <>
     <Router>
+      <Contextapi.Provider >
       <Navbar/>
       <Routes>
         <Route path ='/header' element={<Header/>} ></Route>
@@ -22,9 +28,12 @@ function App() {
           <Route path ='/about' element={<Aboutus/>} ></Route>
           <Route path ='/bundle' element={<Bundle/>} ></Route>
           <Route path ='/contact' element={<Contact/>} ></Route>
+          <Route path ='/products' element={<Projects2/>} ></Route>
+          <Route path ='/filter' element={<Filter/>} ></Route>
         
          </Routes>
       <Footer/>
+      </Contextapi.Provider>
     </Router>
     </>
   );

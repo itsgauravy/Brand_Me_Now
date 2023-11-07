@@ -38,13 +38,14 @@
 }
 
 .contact .btn{
-    background-color: deeppink;
+    background-color:chartreuse;
     font-size: large;
 }
 
 .contact input{
     border-color: chartreuse;
     border-radius: 3px;
+    background-color: white;
 }
 
 .contact select{

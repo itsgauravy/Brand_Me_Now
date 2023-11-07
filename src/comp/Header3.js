@@ -9,10 +9,10 @@ function Header3() {
                     <nav className="nav px-0 mx-0">
                 <ul className="link-list mx-auto">
                     
-                    <li><Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ALL PRODUCTS</Link >
+                    <li><Link className="nav-link dropdown-toggle" to="/products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ALL PRODUCTS</Link >
                         <ul className="dropdown-menu">
-                            <li><Link to="#" className="dropdown-item">T-SHIRTS</Link ></li>
-                            <li><Link to="#"className="dropdown-item">SHIRTS</Link ></li>
+                            <li><Link to="/products" className="dropdown-item">T-SHIRTS</Link ></li>
+                            <li><Link to="/"className="dropdown-item">SHIRTS</Link ></li>
                             <li><Link to="#"className="dropdown-item">SWEATSHIRTS</Link ></li>
                         </ul>
                     </li>
@@ -24,7 +24,7 @@ function Header3() {
                             <li><Link to="#" className="dropdown-item" >Unisex</Link >
 
                                 <ul>
-                                    <li><Link to="#" className="dropdown-item"></Link ></li>
+                                    <li><Link to="/" className="dropdown-item"></Link ></li>
                                     <li><Link to="#" className="dropdown-item"></Link ></li>
                                     <li><Link to="#" className="dropdown-item"></Link > </li>
                                 </ul>
