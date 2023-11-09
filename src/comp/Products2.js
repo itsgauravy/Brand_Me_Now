@@ -5,8 +5,8 @@ function Projects2() {
     return ( 
         <section id="section2 my-4">
             <div className="conatianer-fluid my-5">
-                <div className="row">
-                    <div className="col-md-3">
+                <div className="row mx-5 my-0">
+                    <div className="col-md-2 me-3">
                         <Filter/>
                     </div>
                     <div className="col-md-3">

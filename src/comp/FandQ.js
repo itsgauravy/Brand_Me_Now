@@ -5,7 +5,7 @@ function FandQ() {
   return (
     <>
       <section className="fandq">
-
+<hr/>
         <div className="container" id="ftr2">
           <div className="row">
             <div className="col-md-12">

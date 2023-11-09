@@ -7,11 +7,15 @@ import Navbar from './comp/Navbar';
 import Aboutus from './comp/Aboutus';
 import Bundle from './comp/Bundle';
 import Contact from './comp/Contact';
-
-import { Contextapi } from './comp/Contextapi';
-
 import Filter from './comp/Filter';
 import Projects2 from './comp/Products2';
+import Signup from './comp/Signup';
+import Account from './comp/Account';
+import Login from './comp/Login';
+import FandQ from './comp/FandQ';
+
+
+import { Contextapi } from './comp/Contextapi';
 
 
 
@@ -30,8 +34,12 @@ function App() {
           <Route path ='/contact' element={<Contact/>} ></Route>
           <Route path ='/products' element={<Projects2/>} ></Route>
           <Route path ='/filter' element={<Filter/>} ></Route>
+          <Route path='/signup' element={<Signup/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
+          <Route path='/account' element={<Account/>}> </Route>
         
          </Routes>
+      <FandQ/>   
       <Footer/>
       </Contextapi.Provider>
     </Router>
