@@ -1,6 +1,6 @@
 import { useState } from "react";
 function Filter() {
-    
+
     const [priceRange, setPriceRange] = useState({ min: 0, max: 100 });
     const [showDropdown, setShowDropdown] = useState(false);
     const [showDropdown2, setShowDropdown2] = useState(false);
@@ -15,7 +15,7 @@ function Filter() {
     const [showDropdown11, setShowDropdown11] = useState(false);
     const [showDropdown12, setShowDropdown12] = useState(false);
 
-   
+
 
     function handleChange(e) {
         setPriceRange({
@@ -72,15 +72,23 @@ function Filter() {
         setShowDropdown12(!showDropdown12);
     };
 
-    
+
+   
+        const colors = ['#ff0000', '#00ff00', '#0000ff','#FF69B4']; // Add more colors as needed
+
+        function handleColorClick  (color)  {
+            console.log(`Color ${color} selected`);
+            // Add your logic for handling the selected color
+        
+        };
 
 
 
-    return (
+        return (
 
-        <div className="filter  filter-panel ms-2">
-            <h5>FILTER BY</h5>
-            <div className="dropdown-container">
+            <div className="filter  filter-panel ms-2">
+                <h5>FILTER BY</h5>
+                <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown(e) }}>
                         <span>Brands</span>
                         <div className={`arrow-icon ${showDropdown ? 'open' : ''}`}>▼</div>
@@ -97,59 +105,74 @@ function Filter() {
                         </label>
                     </div>
                 </div>
-            <hr />
+                <hr />
 
-            <div>
-                Price Range
-                <br />
+                <div>
+                    Price Range
+                    <br />
 
-                <input
-                    type="number"
-                    name="min"
-                    min="0"
-                    max={priceRange.max}
-                    step="10"
-                    value={priceRange.min}
-                    onChange={handleChange}
-                    className="input1"
-                />
-                <span> - </span>
-                <input
-                    type="number"
-                    name="max"
-                    min={priceRange.min}
-                    max="1000"
-                    step="10"
-                    value={priceRange.max}
-                    onChange={handleChange}
-                    className="input1"
-                />
+                    <input
+                        type="number"
+                        name="min"
+                        min="0"
+                        max={priceRange.max}
+                        step="10"
+                        value={priceRange.min}
+                        onChange={handleChange}
+                        className="input1"
+                    />
+                    <span> - </span>
+                    <input
+                        type="number"
+                        name="max"
+                        min={priceRange.min}
+                        max="1000"
+                        step="10"
+                        value={priceRange.max}
+                        onChange={handleChange}
+                        className="input1"
+                    />
 
-            </div>
+                </div>
 
-            <hr />
-            <div>
+                <hr />
+                <label>Colours</label>
+                <div>
+                    {colors.map((color, index) => (
+                        <button
+                            key={index}
+                            className="color-option"
+                            style={{ backgroundColor: color }}
+                            onClick={() => {handleColorClick(color)}}
+                        ></button>
+                    ))}
+                </div>
 
-                <div className="dropdown-container">
-                    <div className="dropdown-button" onClick={(e) => { toggleDropdown3(e) }}>
-                        <span>Categories</span>
-                        <div className={`arrow-icon ${showDropdown3 ? 'open' : ''}`}>▼</div>
-                    </div>
-                    <div className={`dropdown-content ${showDropdown3 ? 'show' : ''}`}>
-                        <label className="checkbox-label">
-                            <input type="checkbox" className="checkbox-input" value="option1" /> All
-                        </label>
-                        <label className="checkbox-label">
-                            <input type="checkbox" className="checkbox-input" value="option2" /> Mens
-                        </label>
-                        <label className="checkbox-label">
-                            <input type="checkbox" className="checkbox-input" value="option3" /> Women
-                        </label>
+                <hr />
+
+
+                <div>
+
+                    <div className="dropdown-container">
+                        <div className="dropdown-button" onClick={(e) => { toggleDropdown3(e) }}>
+                            <span>Categories</span>
+                            <div className={`arrow-icon ${showDropdown3 ? 'open' : ''}`}>▼</div>
+                        </div>
+                        <div className={`dropdown-content ${showDropdown3 ? 'show' : ''}`}>
+                            <label className="checkbox-label">
+                                <input type="checkbox" className="checkbox-input" value="option1" /> All
+                            </label>
+                            <label className="checkbox-label">
+                                <input type="checkbox" className="checkbox-input" value="option2" /> Mens
+                            </label>
+                            <label className="checkbox-label">
+                                <input type="checkbox" className="checkbox-input" value="option3" /> Women
+                            </label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <hr />
-            <div className="dropdown-container">
+                <hr />
+                <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown2(e) }}>
                         <span>Age</span>
                         <div className={`arrow-icon ${showDropdown2 ? 'open' : ''}`}>▼</div>
@@ -168,7 +191,7 @@ function Filter() {
                 </div>
 
                 <hr />
-            <div className="dropdown-container">
+                <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown4(e) }}>
                         <span>Customization type</span>
                         <div className={`arrow-icon ${showDropdown4 ? 'open' : ''}`}>▼</div>
@@ -187,7 +210,7 @@ function Filter() {
                 </div>
 
                 <hr />
-            <div className="dropdown-container">
+                <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown5(e) }}>
                         <span>Size</span>
                         <div className={`arrow-icon ${showDropdown5 ? 'open' : ''}`}>▼</div>
@@ -206,7 +229,7 @@ function Filter() {
                 </div>
 
                 <hr />
-            <div className="dropdown-container">
+                <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown6(e) }}>
                         <span>Style</span>
                         <div className={`arrow-icon ${showDropdown6 ? 'open' : ''}`}>▼</div>
@@ -222,8 +245,8 @@ function Filter() {
                             <input type="checkbox" className="checkbox-input" value="option3" /> Option 3
                         </label>
                     </div>
-                </div> 
-                <hr/> 
+                </div>
+                <hr />
                 <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown7(e) }}>
                         <span>Fabric type</span>
@@ -240,8 +263,8 @@ function Filter() {
                             <input type="checkbox" className="checkbox-input" value="option3" /> Option 3
                         </label>
                     </div>
-                </div> 
-                <hr/>  
+                </div>
+                <hr />
                 <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown8(e) }}>
                         <span>Sleeve length</span>
@@ -258,8 +281,8 @@ function Filter() {
                             <input type="checkbox" className="checkbox-input" value="option3" /> Option 3
                         </label>
                     </div>
-                </div> 
-                <hr/>  
+                </div>
+                <hr />
                 <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown9(e) }}>
                         <span>Fit</span>
@@ -276,8 +299,8 @@ function Filter() {
                             <input type="checkbox" className="checkbox-input" value="option3" /> Option 3
                         </label>
                     </div>
-                </div> 
-                <hr/>  
+                </div>
+                <hr />
                 <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown10(e) }}>
                         <span>Fabric Weight</span>
@@ -294,8 +317,8 @@ function Filter() {
                             <input type="checkbox" className="checkbox-input" value="option3" /> Option 3
                         </label>
                     </div>
-                </div>  
-                <hr/> 
+                </div>
+                <hr />
                 <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown11(e) }}>
                         <span>Neckline</span>
@@ -312,12 +335,12 @@ function Filter() {
                             <input type="checkbox" className="checkbox-input" value="option3" /> Option 3
                         </label>
                     </div>
-                </div>  
-                <hr/> 
+                </div>
+                <hr />
                 <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown12(e) }}>
                         <span>Purpose</span>
-                        <div className={`arrow-icon ${showDropdown12? 'open' : ''}`}>▼</div>
+                        <div className={`arrow-icon ${showDropdown12 ? 'open' : ''}`}>▼</div>
                     </div>
                     <div className={`dropdown-content ${showDropdown12 ? 'show' : ''}`}>
                         <label className="checkbox-label">
@@ -330,8 +353,8 @@ function Filter() {
                             <input type="checkbox" className="checkbox-input" value="option3" /> Option 3
                         </label>
                     </div>
-                </div>  
-                <hr/> 
+                </div>
+                <hr />
                 <div className="dropdown-container">
                     <div className="dropdown-button" onClick={(e) => { toggleDropdown12(e) }}>
                         <span>Safety</span>
@@ -348,13 +371,13 @@ function Filter() {
                             <input type="checkbox" className="checkbox-input" value="option3" /> Option 3
                         </label>
                     </div>
-                </div>  
+                </div>
 
 
-        </div>
+            </div>
 
 
-    );
-}
+        );
+    }
 
-export default Filter;
+    export default Filter;

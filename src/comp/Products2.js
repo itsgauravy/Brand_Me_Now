@@ -11,9 +11,9 @@ function Projects2() {
                     </div>
                     <div className="col-md-3">
                     <div className="card1">
-                            <figure>
-                                <img src="item1.jpg" alt="t-shirt"/>
-                            </figure>
+                           <Link to="/prpage"> <figure>
+                                <img src="webimg/shop/1.jpg" alt="t-shirt"/>
+                            </figure></Link>
                             <section className="details">
                                 <div className="min-details">
                                 <h4>Remera <span>azul</span></h4>

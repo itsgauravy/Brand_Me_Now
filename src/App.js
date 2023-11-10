@@ -16,6 +16,7 @@ import FandQ from './comp/FandQ';
 
 
 import { Contextapi } from './comp/Contextapi';
+import Productpage from './comp/Productpage';
 
 
 
@@ -37,6 +38,7 @@ function App() {
           <Route path='/signup' element={<Signup/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/account' element={<Account/>}> </Route>
+          <Route path='/prpage' element={<Productpage/>}> </Route>
         
          </Routes>
       <FandQ/>   

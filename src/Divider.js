@@ -31,7 +31,7 @@ function Divider() {
       </section>
       <section className="py-0 section-bubble5">
         <>
-          <FandQ/>
+          
           
           </>
       </section>

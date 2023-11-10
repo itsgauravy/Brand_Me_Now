@@ -4,6 +4,7 @@ import './index.css';
 import './index2.css';
 import './index3.css';
 import './product.css';
+import './products.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

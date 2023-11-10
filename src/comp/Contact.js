@@ -31,7 +31,7 @@ function Contact() {
                 </div>
                 <div className="col-md-4" id="cform">
                     <h3>CONTACT FORM</h3>
-                    <div className="form ms-auto">
+                    <div className="form ">
                         <form onSubmit={(e) => { handleform(e) }}>
                             <label>FULL NAME</label>
                             <input type='text' value={name} name='name' className="form-control mt-1" placeholder='Enter your full name...' onChange={(e) => { setName(e.target.value) }} required />
